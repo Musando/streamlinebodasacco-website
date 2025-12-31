@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard | Streamline Boda Sacco</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    header {
+      background: #18483d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .dashboard {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      background: #18483d;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: #146a57;
+    }
+  </style>
+
+  <script>
+  const correctPassword = "admin123"; // CHANGE THIS PASSWORD
+
+  let userPassword = prompt("Enter admin password:");
+
+  if (userPassword !== correctPassword) {
+    alert("Access denied!");
+    window.location.href = "index.html"; // redirect to homepage
+  }
+</script>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Streamline Boda Sacco — Admin Panel</h1>
+  <p>Streamline Boda Sacco</p>
+</header>
+
+<div class="dashboard">
+
+  <div class="card">
+    <h3>📋 Member Registrations</h3>
+    <p>View submitted member details</p>
+    <a href="https://docs.google.com/spreadsheets/d/165iUl6lZ7_q3wpbA4rXfyMVer-T3YMSYR-ixOQPGOF8/edit
+      " target="_blank">
+      Open Sheet
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>💬 WhatsApp Messages</h3>
+    <p>View registration inquiries</p>
+    <a href="https://wa.me/254701638845" target="_blank">
+      Open WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>📝 Registration Form</h3>
+    <p>Public registration page</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfabYlRq0hOi8AFqtDugSGibsPClGyfOs5yZNh_3z3zdRK49Q
+       /viewform" target="_blank">
+       Open Form
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>📄 Reports</h3>
+    <p>Download reports (future)</p>
+    <a href="#">Coming Soon</a>
+  </div>
+
+</div>
+
+</body>
+</html>
